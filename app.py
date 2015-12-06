@@ -1,6 +1,8 @@
 from flask import Flask
 from flask import render_template
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'aewfawelkalejtali3tjliejglajitalijtojtiaijtlwaij'
+app.config['DEBUG'] = True
 
 
 @app.route("/")
@@ -22,28 +24,26 @@ def weepoklist():
 def weepoklist_headpok():
     return render_template("weepok/headpok.html")
 
-""" 각자 파일 만들어 주고 이 부위 완성해주세요 """
 
 @app.route("/weepok/suldae")
 def weepoklist_suldae():
-    return render_template("weepoklist.html")
+    return render_template("weepok/suldae.html")
 
 
-@app.route("/weepok/behind-container")
+@app.route("/weepok/behind")
 def weepoklist_container():
-    return render_template("weepoklist.html")
+    return render_template("weepok/behind.html")
 
 
-@app.route("/weepok/three-can")
+@app.route("/weepok/threecan")
 def weepoklist_three_can():
-    return render_template("weepoklist.html")
+    return render_template("weepok/threecan.html")
 
 
-@app.route("/weepok/three-mm")
+@app.route("/weepok/3mm")
 def weepoklist_three_mm():
-    return render_template("weepoklist.html")
+    return render_template("weepok/3mm.html")
 
-""" 여기까지 """
 
 @app.route("/sniper")
 def sniperlist():
