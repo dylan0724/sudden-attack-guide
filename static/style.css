@@ -1,0 +1,30 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+body {
+  background-color: black;
+  font-family: 'Jeju Gothic', sans-serif;
+}
+
+.main {
+  height: 500px;
+  padding: 30px;
+  background: url(/static/sudden_attack.jpg) no-repeat center center;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+.button-group {
+  display: inline-block;
+  margin-top: 200px;
+}
+
+.button-group a {
+  width: 100%;
+  margin-top: 10px;
+}
