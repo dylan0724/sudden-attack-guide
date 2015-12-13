@@ -52,5 +52,30 @@ def sniperlist():
     return render_template("sniperlist.html")
 
 
+@app.route("/sniper/backshot")
+def sniperlist_backshot():
+    return render_template("sniper/backshot.html")
+
+
+@app.route("/sniper/breaking")
+def sniperlist_breaking():
+    return render_template("sniper/breaking.html")
+
+
+@app.route("/sniper/burning")
+def sniperlist_burning():
+    return render_template("sniper/burning.html")
+
+
+@app.route("/sniper/ragshot")
+def sniperlist_ragshot():
+    return render_template("sniper/ragshot.html")
+
+
+@app.route("/sniper/twojump")
+def sniperlist_twojump():
+    return render_template("sniper/twojump.html")
+
+
 if __name__ == "__main__":
     app.run()
